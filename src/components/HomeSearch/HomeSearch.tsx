@@ -40,7 +40,7 @@ const HomeSearch: FC = () => {
                     className='flex-grow focus:outline-none pe-3'
                     onChange={(e) => setInput(e.target.value)}
                 />
-                <FaMicrophone className='text-lg' />
+                <FaMicrophone className='text-lg hover:cursor-pointer' />
             </form>
             <div className='flex flex-col space-y-2 md:space-y-0 justify-center md:flex-row mt-8 sm:mt-5 md:space-x-4'>
                 <button onClick={handleSubmit} className='bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition:shadow'>
