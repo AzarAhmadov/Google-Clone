@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/common/Footer/Footer";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "Google Next",
+  title: "Google Clone With Next js",
   description: "An open soruce Google clone built with Next.js and Tailwind CSS",
 };
 
