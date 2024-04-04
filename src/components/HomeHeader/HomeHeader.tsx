@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { FC } from 'react'
 import { TbGridDots } from "react-icons/tb";
 
-const HomeHeader = () => {
+const HomeHeader: FC = () => {
     return (
-        <header className='flex justify-end p-5 text-sm'>
+        <header className='flex justify-end lg:p-5 sm:p-3 text-sm'>
             <nav>
                 <ul className='flex space-x-4 items-center'>
                     <li>

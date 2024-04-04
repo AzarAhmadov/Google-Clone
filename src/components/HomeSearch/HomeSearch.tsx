@@ -1,12 +1,12 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import { IoSearchOutline } from "react-icons/io5";
 import { FaMicrophone } from "react-icons/fa6";
 import { useRouter } from 'next/navigation';
 import { fetchRandomWords } from '@/services/apiService';
 
-const HomeSearch = () => {
+const HomeSearch: FC = () => {
 
     const [input, setInput] = useState<string>('')
     const [randomLoading, setRandomLoading] = useState<boolean>(false)

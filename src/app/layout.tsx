@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "@/common/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Google Next",
-  description: "Google clone using Next.js and Tailwind",
+  description: "An open soruce Google clone built with Next.js and Tailwind CSS",
 };
 
 export default function RootLayout({
@@ -13,7 +14,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <link rel="icon" type="image/x-icon" href="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png" />
+      <body>
+        <div>
+          {children}
+        </div>
+        <Footer />
+      </body>
     </html>
   );
 }
