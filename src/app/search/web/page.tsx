@@ -1,3 +1,4 @@
+import SearchResults from '@/components/SearchResults/SearchResults';
 import { fetchSearch } from '@/services/apiService';
 import Link from 'next/link';
 import React, { FC } from 'react'
@@ -30,7 +31,7 @@ const WebSearch: FC<{ searchParams: SearchParams }> = async ({ searchParams }) =
 
     return (
         <>
-            asasdad
+            {getSearchData && <SearchResults getSearchData={getSearchData} />}
         </>
     );
 }
