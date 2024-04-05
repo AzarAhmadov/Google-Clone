@@ -4,6 +4,7 @@ import { RiSettings3Line } from 'react-icons/ri';
 import { TbGridDots } from 'react-icons/tb';
 import Search from '../Search/Search';
 import { FC } from 'react';
+import SearchHeaderOptions from '../SearchOptions/SearchOptions';
 
 const SearchHeader: FC = () => {
     return (
@@ -32,6 +33,7 @@ const SearchHeader: FC = () => {
                     Sign in
                 </button>
             </div>
+            <SearchHeaderOptions />
         </header>
     )
 }
