@@ -6,7 +6,10 @@ const nextConfig = {
             hostname: 'upload.wikimedia.org',
             pathname: '**'
         }]
-    }
+    },
+    experimental: {
+        missingSuspenseWithCSRBailout: false,
+    },
 };
 
 export default nextConfig;
