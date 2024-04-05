@@ -32,16 +32,17 @@ const Search: FC = () => {
                     onChange={(e) => setTerm(e.target.value)}
                 />
                 {
-                    term.length >= 1 && <RxCross2
+                    term.length >= 1 &&
+                    <RxCross2
                         className='text-2xl text-gray-500 cursor-pointer sm:mr-3'
                         onClick={() => setTerm('')}
                     />
                 }
                 <BsFillMicFill
-                    className='hidden hover:cursor-pointer sm:inline-flex text-4xl text-blue-500 border-s-2 border-gray-200 mr-3 pl-4'
+                    className='hidden shrink-0  hover:cursor-pointer sm:inline-flex text-4xl text-blue-500 border-s-2 border-gray-200 mr-3 pl-4'
                 />
                 <AiOutlineSearch
-                    className='text-2xl hidden sm:inline-flex text-blue-500 cursor-pointer'
+                    className='text-2xl hidden shrink-0 sm:inline-flex text-blue-500 cursor-pointer'
                     onClick={handleSubmit}
                 />
             </form>
