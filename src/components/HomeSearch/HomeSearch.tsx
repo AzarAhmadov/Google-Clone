@@ -42,7 +42,7 @@ const HomeSearch: FC = () => {
                 />
                 <FaMicrophone className='text-lg hover:cursor-pointer' />
             </form>
-            <div className='flex mdMax:hidden justify-center mt-8 space-x-4'>
+            <div className='hidden md:flex justify-center mt-8 space-x-4'>
                 <button onClick={handleSubmit} className='bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition:shadow'>
                     Google Search
                 </button>
