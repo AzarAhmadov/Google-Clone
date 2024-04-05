@@ -2,9 +2,6 @@
 export const fetchRandomWords = async () => {
     try {
         const response = await fetch('https://random-word-api.herokuapp.com/word');
-        if (!response.ok) {
-            throw new Error('Failed to fetch random words');
-        }
         const data = await response.json();
         return data;
     } catch (error) {
