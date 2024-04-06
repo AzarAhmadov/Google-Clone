@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Google Clone
+An open soruce Google clone built with Next.js and Tailwind CSS
 
-## Getting Started
+## Demo
+Demo : https://google-clone-app-nextjs.vercel.app/
 
-First, run the development server:
+## Features
+- Next.js and TypeScript Integration: Utilizing Next.js and TypeScript for a robust and statically-typed frontend, providing enhanced development capabilities and code maintainability.
+- You can make a search and at the same time you can see the pictures of the search
+- Dynamic pagination
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
+- Next.js 14 
+- TypeScript
+- Tailwind CCSS
+- React icons
+- Html React Parse
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
+Google Cline is deployed on Vercel, a popular platform for hosting web applications.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Screenshots
+<img width="1485" alt="Screenshot 2024-04-06 at 11 55 30" src="https://github.com/AzarAhmadov/Google-Clone/assets/82292818/c396f3f0-5cbd-4443-966c-8cc8a82c07d3">
+<img width="1485" alt="Screenshot 2024-04-06 at 11 55 44" src="https://github.com/AzarAhmadov/Google-Clone/assets/82292818/c5be2a72-ebd2-4943-9394-c09adfa43f23">
+<img width="1512" alt="Screenshot 2024-04-06 at 11 56 41" src="https://github.com/AzarAhmadov/Google-Clone/assets/82292818/4daea498-2b9a-4caa-a768-1aef322e5a1f">
