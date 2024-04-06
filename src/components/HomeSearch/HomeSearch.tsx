@@ -34,13 +34,13 @@ const HomeSearch: FC = () => {
                 className='flex items-center w-full mt-5 mx-auto max-w-[90%] border border-gray-200 px-5 sm:px-4 sm:py-2 lg:py-3 rounded-full hover:shadow-md focus-within:shadow-md transition-shadow sm:max-w-xl lg:max-w-2sm'
                 onSubmit={handleSubmit}
             >
-                <IoSearchOutline className='text-xl text-gray-500 me-3' />
+                <IoSearchOutline className='text-xl text-gray-500 me-3 flex shrink-0' />
                 <input
                     type="text"
                     className='flex-grow focus:outline-none pe-3'
                     onChange={(e) => setInput(e.target.value)}
                 />
-                <FaMicrophone className='text-lg hover:cursor-pointer' />
+                <FaMicrophone className='text-lg hover:cursor-pointer flex shrink-0' />
             </form>
             <div className='hidden md:flex justify-center mt-8 space-x-4'>
                 <button onClick={handleSubmit} className='bg-[#f8f9fa] rounded-md text-sm text-gray-800 hover:ring-gray-200 focus:outline-none active:ring-gray-300 hover:shadow-md w-36 h-10 transition:shadow'>
