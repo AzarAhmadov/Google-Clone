@@ -37,7 +37,7 @@ const HomeSearch: FC = () => {
                 <IoSearchOutline className='text-xl text-gray-500 me-3 flex shrink-0' />
                 <input
                     type="text"
-                    className='flex-grow focus:outline-non rounded-xl'
+                    className='flex-grow focus:outline-none rounded-e-xl'
                     onChange={(e) => setInput(e.target.value)}
                 />
                 <FaMicrophone className='text-lg hover:cursor-pointer absolute right-3' />
