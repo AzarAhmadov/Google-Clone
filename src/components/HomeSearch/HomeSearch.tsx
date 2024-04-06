@@ -31,7 +31,7 @@ const HomeSearch: FC = () => {
     return (
         <section className='ps-4 pe-4 w-full flex flex-col items-center'>
             <form
-                className='flex items-center relative w-full mt-5 mx-auto max-w-[90%] border border-gray-200 px-5 sm:px-4 sm:py-2 lg:py-3 rounded-full hover:shadow-md focus-within:shadow-md transition-shadow sm:max-w-xl lg:max-w-2sm'
+                className='flex items-center z-20 relative w-full mt-5 mx-auto max-w-[90%] border border-gray-200 px-5 sm:px-4 sm:py-2 lg:py-3 rounded-full hover:shadow-md focus-within:shadow-md transition-shadow sm:max-w-xl lg:max-w-2sm'
                 onSubmit={handleSubmit}
             >
                 <IoSearchOutline className='text-xl text-gray-500 me-3 flex shrink-0' />
