@@ -33,3 +33,15 @@ export const fetchSearch = async (lectures: string) => {
         throw error;
     }
 };
+
+// Fetching google search image
+export const fetchSearchImage = async (lectures: string) => {
+    try {
+        const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${lectures}&searchType=image`);
+        const data = await response.json();
+        return data.items;
+    } catch (error) {
+        console.error('Error fetching user country:', error);
+        throw error;
+    }
+};
