@@ -23,9 +23,9 @@ export const fetchUserCountry = async () => {
 };
 
 // Fetching google search result
-export const fetchSearch = async (lectures: string) => {
+export const fetchSearch = async (lectures: string, startIndex: string) => {
     try {
-        const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${lectures}`);
+        const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${lectures}&start=${startIndex}`);
         const data = await response.json();
         return data.items;
     } catch (error) {
@@ -35,9 +35,9 @@ export const fetchSearch = async (lectures: string) => {
 };
 
 // Fetching google search image
-export const fetchSearchImage = async (lectures: string) => {
+export const fetchSearchImage = async (lectures: string, startIndex: string) => {
     try {
-        const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${lectures}&searchType=image`);
+        const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CONTEXT_KEY}&q=${lectures}&searchType=image&start=${startIndex}`);
         const data = await response.json();
         return data.items;
     } catch (error) {

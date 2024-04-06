@@ -1,16 +1,16 @@
 import NoResults from '@/components/NoResults/NoResults';
 import SearchResults from '@/components/SearchResults/SearchResults';
 import { fetchSearch } from '@/services/apiService';
-import Link from 'next/link';
 import React, { FC } from 'react'
-
 export interface SearchParams {
     searchTerm: string;
+    start: string;
 }
 
 const WebSearch: FC<{ searchParams: SearchParams }> = async ({ searchParams }) => {
 
-    const getSearchData = await fetchSearch(searchParams.searchTerm);
+    const startIndex = searchParams.start || '1';
+    const getSearchData = await fetchSearch(searchParams.searchTerm, startIndex);
 
     if (!getSearchData) {
         return (

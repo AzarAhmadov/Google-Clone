@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Pagination from '../Pagination/Pagination';
 interface ImageResult {
     link: string;
     title: string;
@@ -13,16 +14,16 @@ interface Props {
 
 const ImageResults: React.FC<Props> = ({ getSearchImageData }) => {
     return (
-        <div className='sm:pb-24 pb-40 mt-4'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 px-2 md:px-3 space-x-2 md:space-x-4'>
+        <div className='mt-4'>
+            <div className='grid md:gap-4 gap-2 grid-cols-2 md:grid-cols-5 md:px-5 px-3'>
                 {getSearchImageData.map((result: ImageResult) => (
-                    <div className='mb-8' key={result?.link}>
+                    <div className='md:mb-3' key={result?.link}>
                         <div className='group'>
                             <Link href={result?.image?.contextLink}>
                                 <img
                                     src={result?.link ? result.link : 'https://cdn.vectorstock.com/i/500p/48/06/image-preview-icon-picture-placeholder-vector-31284806.jpg'}
                                     alt={result?.title}
-                                    className='h-[140px] lg:h-60 group-hover:shadow-xl w-full object-cover transition-shadow duration-300'
+                                    className='h-[140px] object-center rounded-sm lg:h-60 group-hover:shadow-xl w-full object-cover transition-shadow duration-300'
                                 />
                             </Link>
                             <Link href={result?.image?.contextLink}>
@@ -38,6 +39,9 @@ const ImageResults: React.FC<Props> = ({ getSearchImageData }) => {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className='mb-7 mt-5 md:mt-3 flex justify-center'>
+                <Pagination />
             </div>
         </div>
     );
