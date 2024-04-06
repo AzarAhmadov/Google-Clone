@@ -5,8 +5,11 @@ import NoResults from '@/components/NoResults/NoResults';
 import ImageResults from '@/components/ImageResults/ImageResults';
 
 const ImageSearch: FC<{ searchParams: SearchParams }> = async ({ searchParams }) => {
+
     const startIndex = searchParams.start || '1';
     const getSearchImageData = await fetchSearchImage(searchParams.searchTerm, startIndex);
+
+    await new Promise((resolve) => setTimeout(resolve, 10000))
 
     if (!getSearchImageData) {
         return (
