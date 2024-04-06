@@ -9,7 +9,7 @@ const ImageSearch: FC<{ searchParams: SearchParams }> = async ({ searchParams })
     const startIndex = searchParams.start || '1';
     const getSearchImageData = await fetchSearchImage(searchParams.searchTerm, startIndex);
 
-    await new Promise((resolve) => setTimeout(resolve, 10000))
+    await new Promise((resolve) => setTimeout(resolve, 1000))
 
     if (!getSearchImageData) {
         return (
